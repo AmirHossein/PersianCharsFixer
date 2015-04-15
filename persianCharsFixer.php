@@ -78,5 +78,5 @@ function persianCharsFixer($str) {
         'ØŸ' => '؟'
     );
 
-    return str_replace(array_keys($alphabet), array_values($alphabet), $str);
+    return strtr($str, $alphabet);
 }
